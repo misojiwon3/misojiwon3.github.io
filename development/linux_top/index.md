@@ -4,9 +4,8 @@ type: post
 category: blog
 title:  "리눅스 top 명령"
 subtitle: "October 14, 2019"
-tag: "Linux"
+tag: "linux"
 date: "2016-10-22"
-order: 8
 ---
 
 ### 기본 정보

@@ -2,11 +2,10 @@
 layout: default
 type: post
 category: development
-title:  "devel"
-subtitle: "subtitle devel"
-tag: "hanseungtaek"
+title:  ".vimrc 파일 설정"
+subtitle: "기본적인 설정들을 위한 .vimrc 파일 설정 방식"
+tag: "vim"
 date: "2016-12-01"
-order: 8
 ---
 
 문법 강조

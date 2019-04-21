@@ -2,15 +2,15 @@
 layout: default
 type: post
 category: development
-title:  "markdown sample"
-subtitle: "마크다운 샘플"
-tag: "Sample"
+title:  "markdown example"
+subtitle: "마크다운 예제"
+tag: "markdown"
 date: "2019-02-21"
 ---
 
 # H1
 ## H2
-### Garbage Collection
+### H3
 #### H4
 ##### H5
 ###### H6
