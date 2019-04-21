@@ -2,6 +2,9 @@
 var current = window.location.pathname.split("/")[1].replace(/\//gi, "");
 
 
+/**/
+
+
 /* navigation bar activation */
 
 $(".category .category-header").addClass(current);
@@ -35,3 +38,4 @@ $('.tags .tag-list .tag').on('click', function() {
         $('.category .post-list .post-item').not('.' + current_tag).addClass("invisible");
     }
 });
+

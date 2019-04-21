@@ -183,13 +183,17 @@
         }
       }
 
+      code {
+        color: aliceblue !important;
+      }
+
       pre,
       code {
         font-family: $monospaced;
       }
 
       code.highlighter-rouge {
-        background-color: $grey-3;
+        background-color: $code-background-color;
         border-radius: 3px;
         font-size: 80%;
         padding: .2em .4em;
@@ -197,10 +201,10 @@
       }
 
       pre {
-        border: 1px solid $grey-2-70;
+        //border: 1px solid $grey-2-70;
         overflow-x: auto;
         padding: 0.7rem;
-        background-color: $grey-3;
+        background-color: $code-background-color;
         border-radius: 3px;
         line-height: 1.4;
 

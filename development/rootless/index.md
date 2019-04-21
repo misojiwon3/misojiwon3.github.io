@@ -6,7 +6,6 @@ title:  "macOS Rootless"
 subtitle: "macOS System Integrity Protection (SIP)"
 tag: "macOS"
 date: "2019-04-21"
-header-image: "image/header.jpg"
 ---
 
 ### Rootless?
@@ -28,16 +27,16 @@ Rootless가 enable 일 때 위 디렉토리 영역에 ls, mv, cp 등의 작업�
 3. 복구 모드의 메뉴막대에서 `유틸리티 > 터미널` 실행
 ![rootless](image/macos_rootless.jpg)
 3. 터미널에 다음을 입력하여 SIP 기능을 비활성화 시킨 후 reboot
-```
+```bash
 $ csrutil disable
 $ reboot
 ```
 4. 다시 SIP 기능을 활성화 하려면 다음을 입력
-```
+```bash
 $ csrutil enable
 ```
 5. 상태 확인
-```
+```bash
 $ csrutil status
 System Integrity Protection status: disabled.
 ```
@@ -46,14 +45,12 @@ System Integrity Protection status: disabled.
 비활성화 방식과는 달리 Rootless가 비활성 상태라면 정상 부팅 환경에서 활성화 가능
 
 1. 터미널 실행 후 다음 입력
-```
+```bash
 $ sudo /usr/bin/csrutil clear
 Successfully cleared System Integrity Protection. Please restart the machine for the changes to take effect.
 ```
 2. 입력 후 재시동 하면 SIP 기능 활성화
-```
+```bash
 $ csrutil status
 System Integrity Protection status: enabled.
 ```
-
-
