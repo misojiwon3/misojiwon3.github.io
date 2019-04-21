@@ -7,6 +7,7 @@
 
     {% include template/navigation.html %}
 
+    {% comment %}
     {% if page.type == "home" %}
     {% include home.html %}
     {% elsif page.type == "category" %}
@@ -14,6 +15,7 @@
     {% else %}
     {% include post.html %}
     {% endif %}
+    {% endcomment %}
 
     {% include template/footer.html %}
 
