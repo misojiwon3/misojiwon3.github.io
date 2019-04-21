@@ -8,5 +8,3 @@ project/plugins/project/
 .cache
 .lib/
 .idea/
-
-Gemfile*
