@@ -1,7 +1,7 @@
 ---
 layout: default
 type: post
-category: blog1
+category: blog
 title:  "리눅스 top 명령"
 subtitle: "October 14, 2019"
 tag: "Linux"

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  {% include template/head.html %}
+  {% include head.html %}
 
   <body>
 
-    {% include template/navigation.html %}
+    {% include navigation.html %}
 
     {% if page.type == "home" %}
     {% include home.html %}
@@ -15,7 +15,7 @@
     {% include post.html %}
     {% endif %}
 
-    {% include template/footer.html %}
+    {% include footer.html %}
 
   </body>
   <script type="text/javascript" src="/assets/custom/scripts.js"></script>
