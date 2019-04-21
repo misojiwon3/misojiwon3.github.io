@@ -1,0 +1,16 @@
+<!-- Navigation -->
+
+<nav class="nav">
+  <div class="nav-container">
+    <ul>
+    {% for menu in site.menubar %}
+      {% assign active = page.url | downcase | split: '/' %}
+      {% if menu == "Home" %}
+      <li><a href="{{ '/' | prepend: site.baseurl }}" class="{{ menu | downcase }}">Home</a></li>
+      {% else %}
+      <li><a href="/{{ menu | downcase | prepend: site.baseurl }}" class="{{ menu | downcase }}">{{menu}}</a></li>
+      {% endif %}
+    {% endfor %}
+    </ul>
+  </div>
+</nav>

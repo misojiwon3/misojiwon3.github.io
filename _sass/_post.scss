@@ -1,0 +1,262 @@
+.post {
+  padding-top: $nav-height;
+
+  .post-header {
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-bottom: 80px;
+    background-size: cover;
+    width: 100%;
+    min-height: $page-header;
+    background-color: $post-header-color;
+
+    @media (max-width: $break-small) {
+      min-height: 200px;
+    }
+
+    .post-info {
+      position: relative;
+      top: 100px;
+      margin: 0 auto;
+      padding: 20px;
+      max-width: $max-width;
+      color: $white;
+
+      .post-tag {
+        @include post-tag;
+      }
+
+      .post-title {
+        margin-bottom: 10px;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 1.2;
+        letter-spacing: -0.009em;
+
+        @media (max-width: $break-small) {
+          font-size: 28px;
+          line-height: 1.4em;
+        }
+      }
+
+      .post-subtitle {
+        margin-bottom: 20px;
+        font-weight: 400;
+        font-size: 20px;
+        font-style: italic;
+        line-height: 1.5;
+
+        @media (max-width: $break-small) {
+          font-size: 20px;
+          padding: 0 0 90px 0;
+        }
+      }
+
+      .post-date {
+        font-size: 20px;
+        font-family: $contemporary-serif;
+        font-weight: 400;
+        font-style: italic;
+      }
+    }
+  }
+
+  .post-body {
+    max-width: $max-width;
+    width: 80%;
+    margin: 30px auto;
+
+    @media (max-width: $break-small) {
+      width: 88%;
+    }
+
+    .content {
+      h1 {
+        padding: 40px 0 16px 0;
+        letter-spacing: -0.009em;
+      }
+
+      h2 {
+        padding: 30px 0 12px 0;
+        font-weight: 700;
+        font-size: 25px;
+      }
+
+      h2:first-child {
+        padding: 0 0 12px 0;
+      }
+
+      h3 {
+        padding: 20px 0 10px 0;
+        font-size: 22px;
+        font-weight: 600;
+      }
+
+      h4, h5 {
+        padding: 12px 0 8px 0;
+      }
+
+      h5 {
+        font-size: 17px;
+      }
+
+      h6 {
+        line-height: 1.6;
+
+        @media (max-width: $break-small) {
+          font-size: 15px;
+        }
+      }
+
+      a:hover {
+        opacity: .6;
+        transition: all 0.2s;
+      }
+
+      ul {
+        li {
+          list-style: none;
+          padding: 8px 0 0 0;
+          margin-left: 20px;
+          line-height: 1.65;
+          position: relative;
+
+          ul li:before {
+            background-color: $grey-1;
+            border-radius: 0%;
+            width: 4px;
+            height: 4px;
+            top: 21px;
+          }
+          ul li ul li:before {
+            background-color: $grey-2;
+          }
+          ul li ul li ul li:before {
+            background-color: $grey-2;
+            border-radius: 0%;
+            width: 4px;
+            height: 4px;
+            top: 21px;
+          }
+        }
+
+        li:before {
+          content: "";
+          position: absolute;
+          width: 5px;
+          height: 5px;
+          background-color: $grey-1;
+          border-radius: 50%;
+          left: -14px;
+          top: 20px;
+
+          @media (max-width: $break-small) {
+            top: 14px;
+          }
+        }
+      }
+
+      ol {
+        margin: 0;
+        padding-left: 25px;
+
+        li {
+          padding: 8px 0 0 0;
+        }
+      }
+
+      blockquote {
+        border-left: 3px solid $blockquote-bar;
+        color: $blockquote-color;
+        font-style: italic;
+        line-height: 1.8;
+        margin: 24px 0;
+        padding: 30px;
+        quotes: none;
+
+        p:last-child {
+          margin-bottom: 0;
+        }
+
+        @media (min-width: 600px) {
+          padding: 0 0 0 1.25rem;
+        }
+      }
+
+      pre,
+      code {
+        font-family: $monospaced;
+      }
+
+      code.highlighter-rouge {
+        background-color: $grey-3;
+        border-radius: 3px;
+        font-size: 80%;
+        padding: .2em .4em;
+        border: 1px solid $grey-2-70;
+      }
+
+      pre {
+        border: 1px solid $grey-2-70;
+        overflow-x: auto;
+        padding: 0.7rem;
+        background-color: $grey-3;
+        border-radius: 3px;
+        line-height: 1.4;
+
+        code {
+          background-color: transparent;
+          color: inherit;
+          font-size: 80%;
+          padding: 0;
+        }
+      }
+
+      table {
+        border-collapse: collapse;
+
+        th {
+          padding: 5px;
+          border: 1px solid $tutu;
+          background-color: #f3f6f7;
+        }
+
+        tr, td {
+          padding: 5px;
+          border: 1px solid $tutu;
+          font-size: 95%;
+        }
+      }
+    }
+
+    p {
+      line-height: 1.8;
+      margin: 0 0 10px 0;
+      word-break: break-all;
+      letter-spacing: -0.009em;
+
+      sup {
+        a.footnote {
+          background: none;
+          color: $purple;
+        }
+      }
+      img {
+        margin: 0 auto;
+      }
+    }
+
+    figcaption {
+      text-align: center;
+      font-size: 16px;
+      font-style: italic;
+      color: $grey-1;
+      line-height: 1.8;
+      margin-bottom: 40px;
+
+      @media (max-width: $break-small ) {
+        font-size: 15px;
+      }
+    }
+  }
+}

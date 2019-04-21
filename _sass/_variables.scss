@@ -1,0 +1,74 @@
+// Heights
+
+$nav-height: 72px;
+$footer-height: 166px;
+$footer-top-margin: 80px;
+$main-height: calc(100% - #{$footer-height} - #{$footer-top-margin});
+$page-header: 360px;
+
+// Width
+$max-width: 800px;
+
+// Colors
+$default-color: #555;
+$default-shade: #353535;
+$default-tint: #8898aa;
+$shadow-color: rgba(0, 0, 0, .2);
+
+$post-header-color: rgba(45,45,45,0.98);
+
+$code-color: #bf616a;
+$code-background-color: #49483e;
+
+$blockquote-bar: #55c5f0;
+$blockquote-color: #3d3d3d;
+
+$grey-0: #333e4c;
+$grey-0-80: rgba(51, 62, 76, .8);
+$grey-1: #90949a;
+$grey-2: #D8E0E7;
+$grey-2-70: rgba(216, 224, 231, .7);
+$grey-3: #f6f9fc;
+$grey-20: #333333;
+$grey-95: #f2f2f2;
+$slate-grey: #708090;
+
+$white: #fff;
+$purple: #8565fc;
+$light-purple: #C58BE7;
+$vivid-blue: #2828CD;
+$dark-red: #CD1039;
+$mulberry: #C54B8C;
+$turtle-green: #264200;
+$tutu: #FFE3E3;
+
+// media
+$break-medium: 900px;
+$break-small: 670px;
+
+// Fonts
+$sans-serif: 'Lato', Calibri, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$contemporary-serif: 'Lora', 'Times New Roman', serif;
+$serif-secondary: Palatino, 'Palatino LT STD', 'Palatino Linotype', 'Book Antiqua', 'Georgia', serif;
+$monospaced: Menlo, Monaco, monospace;
+$open-sans: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$source: 'Source Sans Pro', sans-serif;
+
+@mixin box-sizing($type: border-box) {
+  -webkit-box-sizing: $type;
+     -moz-box-sizing: $type;
+          box-sizing: $type;
+}
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+     -moz-transition: $args;
+          transition: $args;
+}
+
+@mixin post-tag {
+  color: $light-purple;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: .7em;
+}

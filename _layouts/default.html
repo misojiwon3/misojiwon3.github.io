@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include template/head.html %}
+
+  <body>
+
+    {% include template/navigation.html %}
+
+    {% if page.type == "home" %}
+    {% include home.html %}
+    {% elsif page.type == "category" %}
+    {% include category.html %}
+    {% else %}
+    {% include post.html %}
+    {% endif %}
+
+    {% include template/footer.html %}
+
+  </body>
+  <script type="text/javascript" src="/assets/custom/scripts.js"></script>
+</html>

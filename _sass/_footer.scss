@@ -1,0 +1,48 @@
+footer {
+  position: relative;
+  bottom: 0;
+  margin-top: $footer-top-margin;
+  height: $footer-height;
+  width: 100%;
+  font-family: $contemporary-serif;
+  background-color: $grey-95;
+  color: $default-tint;
+  border-top: 1px solid $grey-2;
+
+  .container {
+    margin: 40px auto;
+    max-width: $max-width;
+    font-style: normal;
+    position: relative;
+    text-align: center;
+
+    .information {
+
+      a {
+        margin: 0 7px;
+        svg {
+          fill: $default-tint;
+          height: 30px;
+        }
+      }
+
+      a:hover {
+        opacity: .6;
+      }
+    }
+
+    .copyright {
+      margin: 20px 0 0 0;
+
+      @media (max-width: $break-small) {
+        float: none;
+        position: static;
+        margin-top: 6px;
+      }
+
+      span {
+        font-size: 16px;
+      }
+    }
+  }
+}

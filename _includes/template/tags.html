@@ -1,0 +1,18 @@
+<!-- Tags -->
+
+<div class="tags">
+    <div class="tag-title">
+        tags
+    </div>
+    <div class="tag-list">
+        <a class="tag all">all</a>
+        {% assign tags = site.pages | map: 'tag' | uniq %}
+
+        {% for tag in tags %}
+        {% assign tag_size = tag | size %}
+        {% if tag_size > 0 %}
+        <a class="tag {{tag}}">{{tag}}</a>
+        {% endif %}
+        {% endfor %}
+    </div>
+</div>

@@ -1,0 +1,21 @@
+<li class="post-item {{page.tag}}">
+    <a href="{{ page.url | prepend: site.baseurl }}" >
+        <div class="post-item-tag">
+            {{ page.tag }}
+        </div>
+        <div class="post-item-info transition">
+            <div class="post-item-info-title">
+                {{ page.title }}
+            </div>
+<!--            <p class="post-item-info-sub">-->
+<!--                {{ page.subtitle }}-->
+<!--            </p>-->
+            <div class="post-item-info-date" datetime="{{ page.date }}">
+                Posted By {{ site.author.name }} on {{ page.date | date: "%B %Y, %d" }}
+            </div>
+            <div class="post-item-info-body">
+                {{ page.content | markdownify | strip_html | truncate: 130 }}
+            </div>
+        </div>
+    </a>
+</li>    
