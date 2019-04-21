@@ -29,6 +29,10 @@
       background-color: $grey-20;
     }
 
+    &.environment {
+      background-color: $deep-blue;
+    }
+
     &-title {
       max-width: $max-width;
       margin: 0 auto;
