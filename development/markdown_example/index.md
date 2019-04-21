@@ -1,7 +1,7 @@
 ---
 layout: default
-type: post
-category: development
+type: post1
+category: development1
 title:  "markdown example"
 subtitle: "마크다운 예제"
 tag: "markdown"

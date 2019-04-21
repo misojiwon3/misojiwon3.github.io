@@ -1,7 +1,7 @@
 ---
 layout: default
-type: post
-category: development
+type: post1
+category: development1
 title:  "macOS Rootless"
 subtitle: "macOS System Integrity Protection (SIP)"
 tag: "macOS"

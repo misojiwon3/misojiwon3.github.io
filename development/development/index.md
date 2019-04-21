@@ -1,7 +1,7 @@
 ---
 layout: default
-type: post
-category: development
+type: post1
+category: development1
 title:  ".vimrc 파일 설정"
 subtitle: "기본적인 설정들을 위한 .vimrc 파일 설정 방식"
 tag: "vim"
