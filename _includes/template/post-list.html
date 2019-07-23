@@ -11,7 +11,7 @@
 <!--                {{ page.subtitle }}-->
 <!--            </p>-->
             <div class="post-item-info-date" datetime="{{ page.date }}">
-                Posted By {{ site.author.name }} on {{ page.date | date: "%B %Y, %d" }}
+                Posted On {{ page.date | date: "%B %Y, %d" }}
             </div>
             <div class="post-item-info-body">
                 {{ page.content | markdownify | strip_html | truncate: 130 }}

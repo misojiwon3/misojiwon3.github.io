@@ -1,7 +1,7 @@
 ---
 layout: default
-type: post1
-category: development1
+type: post
+category: development
 title:  "리눅스 top 명령"
 subtitle: "October 14, 2019"
 tag: "linux"

@@ -1,10 +1,9 @@
 ---
 layout: default
-type: post1
-category: development1
+type: post_not_exposed
+category: development_not_exposed
 title:  "markdown example"
 subtitle: "마크다운 예제"
-tag: "markdown"
 date: "2019-02-21"
 ---
 
