@@ -3,9 +3,9 @@ layout: default
 type: post
 category: development
 title:  "리눅스 top 명령"
-subtitle: "October 14, 2019"
+subtitle: "리눅스 프로세스 상태 및 정보 확인"
 tag: "linux"
-date: "2016-10-22"
+date: "2019-06-22"
 ---
 
 ### 기본 정보
@@ -13,7 +13,7 @@ date: "2016-10-22"
 * /proc/stat 의 내용을 사용자가 보기 쉽도록 파싱해서 보여줌
 
 ### 항목 설명
-[image:3140B4BE-FFA3-4FEB-888C-54B99E99DBDF-291-000004D18EC58EFB/스크린샷 2019-04-17 오전 10.21.32.png]
+![Top 실행 결과 캡쳐](/images/development/linux_top_capture.jpg)
 
 |Value|Description|
 |---|---|
@@ -42,8 +42,10 @@ date: "2016-10-22"
 |8094032 free,|남아있는 스왑 메모리 용량|
 |163500 used.|사용된 스왑 메모리 용량|
 |7716248 avail Mem|사용 가능한 스왑 메모리 용량|
+  
+  
+![Top 실행 결과 캡쳐2](/images/development/linux_top_capture2.jpg)
 
-[image:0748D197-CD91-4AE2-8B6E-8889435A904C-291-0000083E60E6A61B/DA7FF63F-F117-4BB4-AF7E-64C4C43A9B07.png]
 ```
 PID   # 프로세스 ID
 USER   # 프로세스를 실행시킨 사용자의 ID
