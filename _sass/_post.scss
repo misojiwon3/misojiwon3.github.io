@@ -8,10 +8,22 @@
     background-size: cover;
     width: 100%;
     min-height: $page-header;
-    background-color: $post-header-color;
+    //background-color: $post-header-color;
 
     @media (max-width: $break-small) {
       min-height: 200px;
+    }
+
+    &.blog {
+      background-color: $turtle-green;
+    }
+
+    &.development {
+      background-color: $grey-20;
+    }
+
+    &.etc {
+      background-color: $deep-blue;
     }
 
     .post-info {

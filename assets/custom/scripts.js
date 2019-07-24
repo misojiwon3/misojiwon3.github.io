@@ -8,6 +8,7 @@ var current = window.location.pathname.split("/")[1].replace(/\//gi, "");
 /* navigation bar activation */
 
 $(".category .category-header").addClass(current);
+$(".post .post-header").addClass(current);
 
 if (current === '') {
     $(".nav .nav-container ul .home").addClass("active");
