@@ -14,7 +14,7 @@ date: "2019-04-21"
 * 사용자나 응용 프로그램이 시스템 영역의 파일을 삭제하거나 변조할 수 없도록 '커널 레벨'에서 파일을 잠그는 기능
 * 사용자가 관리자 권한을 가지고 있더라도 시스템 파일을 마음대로 건드릴 수 없도록 차단
 
-![rootless_platform_policy](/images/etc/rootless_platform_policy.jpg)
+![rootless_platform_policy](/images/etc/mac_rootless/platform_policy.jpg)
 <figcaption>Rootless가 보호하는 영역</figcaption>
 
 ### Rootless의 장단점
@@ -25,7 +25,7 @@ Rootless가 enable 일 때 위 디렉토리 영역에 ls, mv, cp 등의 작업�
 1. 맥 종료 후 재시작
 2. 재시작 되는 과정에서 ⌘+R 버튼을 눌러 복구모드로 진입
 3. 복구 모드의 메뉴막대에서 `유틸리티 > 터미널` 실행
-![rootless](/images/etc/rootless_macos.jpg)
+![rootless](/images/etc/mac_rootless/macos.jpg)
 4. 터미널에 다음을 입력하여 SIP 기능을 비활성화 시킨 후 reboot
 ```bash
 $ csrutil disable
