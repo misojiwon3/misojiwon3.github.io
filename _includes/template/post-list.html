@@ -10,11 +10,11 @@
 <!--            <p class="post-item-info-sub">-->
 <!--                {{ page.subtitle }}-->
 <!--            </p>-->
-            <div class="post-item-info-date" datetime="{{ page.date }}">
-                Posted On {{ page.date | date: "%d %B, %Y" }}
-            </div>
+<!--            <div class="post-item-info-date" datetime="{{ page.date }}">-->
+<!--                Posted On {{ page.date | date: "%d %B, %Y" }}-->
+<!--            </div>-->
             <div class="post-item-info-body">
-                {{ page.content | markdownify | strip_html | truncate: 130 }}
+                {{ page.content | markdownify | strip_html | truncate: 160 }}
             </div>
         </div>
     </a>

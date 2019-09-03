@@ -101,7 +101,7 @@
 
         &-title {
           color: $grey-0;
-          font-size: 34px;
+          font-size: 28px;
           font-weight: 600;
           line-height: 1.5;
           letter-spacing: -0.009em;
@@ -112,7 +112,7 @@
         }
 
         &-sub {
-          margin: .5em 0 .7em;
+          margin: .5em 0 .2em;
           font-size: 18px;
           color: $slate-grey;
           line-height: 1.75;
@@ -128,7 +128,7 @@
         }
 
         &-body {
-          font-size: 18px;
+          font-size: 16px;
           margin: .4em 0 .7em;
           color: $grey-1;
         }
