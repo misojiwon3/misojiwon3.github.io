@@ -2,8 +2,8 @@
 layout: default
 type: post
 category: development
-title:  "리눅스 cut, wc"
-subtitle: "리눅스 문자열 자르기 및 수 세는 명령어"
+title:  "리눅스 cut, wc, sort"
+subtitle: "리눅스 문자열 자르기, 문자 수 세기, 텍스트를 행 단위로 정렬하기"
 tag: "linux"
 date: "2019-08-03"
 ---
@@ -41,4 +41,71 @@ $ grep 'DEBUG' debug.log | wc -l
 	7423
 ```
 
+
+### sort
+* cat, out 등에 의한 출력을 행별로 정렬    
+* 파일의 텍스트를 정렬  
+
+```
+$ cat sort.txt
+1 2
+5 3
+4 1
+3 5
+2 4
+```
+
+```
+$ sort sort.txt
+
+1 2
+2 4
+3 5
+4 1
+5 3
+```
+
+```
+-r : 출력 순서를 역순으로 정렬
+
+$ sort -r sort.txt
+5 3
+4 1
+3 5
+2 4
+1 2
+```
+
+```
+-k : 입력된 필드 번호를 기준으로 정렬
+
+$ sort -k 2 sort.txt
+
+4 1
+1 2
+5 3
+2 4
+3 5
+```
+
+```
+-u : 중복행 제거 후 정렬
+
+$ cat sort.txt
+1 2
+5 3
+4 1
+4 1
+3 5
+2 4
+
+$ sort -u sort.txt
+
+1 2
+2 4
+3 5
+4 1
+5 3
+
+```
 
