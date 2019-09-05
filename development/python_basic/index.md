@@ -391,3 +391,19 @@ def multifly(a, b):
 multifly(2, 3)
 6
 ```
+
+
+## Formatting
+
+```python
+>>> 'My age is %d' % 33
+'My age is 33'
+>>> 'My Name is %s' % 'hanseung'
+'My Name is hanseung'
+```
+
+## 주석
+
+```python
+# 주석은 # 로 표시
+```
