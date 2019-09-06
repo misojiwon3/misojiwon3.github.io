@@ -393,6 +393,23 @@ multifly(2, 3)
 ```
 
 
+
+## Type
+```python
+>>> my_int = 1
+>>> type(my_int)
+<class 'int'>
+>>> float(my_int)
+1.0
+>>> my_float = float(my_int)
+>>> type(my_float)
+<class 'float'>
+>>> my_str = 'coding'
+>>> list(my_str)
+['c', 'o', 'd', 'i', 'n', 'g']
+```
+
+
 ## Formatting
 
 ```python
