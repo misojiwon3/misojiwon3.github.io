@@ -22,3 +22,9 @@ tag: [tag]
 date: [date, yyyy-MM-dd]
 header-image: [directory 기준 image 상대경로] (Optional)
 ```
+
+
+## 실행
+```
+jekyll serve
+```
