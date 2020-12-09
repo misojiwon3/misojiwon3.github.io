@@ -1,7 +1,7 @@
 _site
 .sass-cache
 .jekyll-metadata
-
+.jekyll-cache
 
 project/plugins/project/
 .history
