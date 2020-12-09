@@ -1,0 +1,389 @@
+I"�i<h2 id="기본-연산">기본 연산</h2>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># 덧셈
+</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="mi">2</span>
+
+<span class="c1"># 뺄셈
+</span><span class="mi">7</span> <span class="o">-</span> <span class="mi">3</span>
+<span class="mi">4</span>
+
+<span class="c1"># 곱셈
+</span><span class="mi">2</span> <span class="o">*</span> <span class="mi">4</span>
+<span class="mi">8</span>
+
+<span class="c1"># 나눗셈
+</span><span class="mi">10</span> <span class="o">/</span> <span class="mi">3</span>
+<span class="mf">3.3333333333333335</span>
+
+<span class="c1"># 모듈러
+</span><span class="mi">13</span> <span class="o">%</span> <span class="mi">5</span>
+<span class="mi">3</span>
+
+<span class="c1"># 몫 구하기
+</span><span class="mi">20</span> <span class="o">//</span> <span class="mi">3</span>
+<span class="mi">6</span>
+
+<span class="c1"># 동등 연산
+</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">3</span>
+<span class="bp">True</span>
+
+<span class="mi">1</span> <span class="o">+</span> <span class="mi">4</span> <span class="o">==</span> <span class="mi">3</span>
+<span class="bp">False</span>
+
+<span class="c1"># 부등 연산
+</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">!=</span> <span class="mi">4</span>
+<span class="bp">True</span>
+
+<span class="c1"># 비교 연산
+</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">&gt;</span> <span class="mi">4</span>
+<span class="bp">False</span>
+</code></pre></div></div>
+
+<h3 id="and-or-조건-사용하기">and, or 조건 사용하기</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mi">12</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="mi">12</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span>
+<span class="bp">True</span>
+
+<span class="mi">14</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="mi">14</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span>
+<span class="bp">False</span>
+
+<span class="mi">14</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="mi">14</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span>
+<span class="bp">True</span>
+
+<span class="mi">14</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="mi">14</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="mi">15</span> <span class="o">%</span> <span class="mi">4</span> <span class="o">==</span> <span class="mi">0</span>
+<span class="bp">False</span>
+</code></pre></div></div>
+
+<h2 id="변수">변수</h2>
+<ul>
+  <li>변수명은 숫자로 시작할 수 없음</li>
+  <li>언더바(_) 를 제외한 특수문자를 변수명에 사용할 수 없음</li>
+  <li>띄어쓰기가 사용할 수 없음</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+
+<span class="mi">8</span>
+</code></pre></div></div>
+
+<h2 id="문자열">문자열</h2>
+<ul>
+  <li>숫자 외 다양한 데이터</li>
+  <li>텍스트</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># int == integer
+# str == string
+</span><span class="s">"Hello World"</span>
+
+<span class="s">'Hello World'</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="s">"Hello World!"</span><span class="p">)</span>
+
+<span class="n">Hello</span> <span class="n">World</span><span class="err">!</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a</span> <span class="o">=</span> <span class="mi">6</span>
+<span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"a"</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">'a'</span><span class="p">)</span>
+
+<span class="mi">6</span>
+<span class="n">a</span>
+<span class="n">a</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="s">"Hanseung's Hobby?"</span><span class="p">)</span>
+
+<span class="n">Hanseung</span><span class="s">'s Hobby?
+</span></code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">'Hanseung</span><span class="se">\'</span><span class="s">s Hobby?'</span>
+
+<span class="s">"Hanseung's Hobby?"</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># 문자열은 대소문자를 구분합니다.
+</span><span class="k">print</span><span class="p">(</span><span class="s">"C"</span> <span class="o">==</span> <span class="s">"c"</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"C"</span> <span class="o">==</span> <span class="s">"C"</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"1"</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span>
+
+<span class="bp">False</span>
+<span class="bp">True</span>
+<span class="bp">False</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># 서로 다른 타입으로 연산을 시도하면 TypeError 발생
+</span><span class="mi">1</span> <span class="o">+</span> <span class="s">"2"</span>
+
+    <span class="o">---------------------------------------------------------------------------</span>
+    <span class="nb">TypeError</span>                                 <span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">)</span>
+    <span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">37</span><span class="o">-</span><span class="n">db092cb74d2d</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+    <span class="o">----&gt;</span> <span class="mi">1</span> <span class="mi">1</span> <span class="o">+</span> <span class="s">"2"</span>
+    <span class="nb">TypeError</span><span class="p">:</span> <span class="n">unsupported</span> <span class="n">operand</span> <span class="nb">type</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="k">for</span> <span class="o">+</span><span class="p">:</span> <span class="s">'int'</span> <span class="ow">and</span> <span class="s">'str'</span>
+</code></pre></div></div>
+
+<h2 id="boolean">Boolean</h2>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Boolean 표현시에는 첫 글자는 대문자, 그 뒤 문자는 소문자여야 한다
+</span><span class="bp">False</span>
+
+<span class="bp">False</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">FALSE</span>
+
+    <span class="o">---------------------------------------------------------------------------</span>
+    <span class="nb">NameError</span>                                 <span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">)</span>
+    <span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">41</span><span class="o">-</span><span class="n">d5612866378f</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+    <span class="o">----&gt;</span> <span class="mi">1</span> <span class="n">FALSE</span>
+    <span class="nb">NameError</span><span class="p">:</span> <span class="n">name</span> <span class="s">'FALSE'</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">defined</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">false</span>
+
+    <span class="o">---------------------------------------------------------------------------</span>
+    <span class="nb">NameError</span>                                 <span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">)</span>
+    <span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">142</span><span class="o">-</span><span class="n">b73d74fcede9</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+    <span class="o">----&gt;</span> <span class="mi">1</span> <span class="n">false</span>
+    <span class="nb">NameError</span><span class="p">:</span> <span class="n">name</span> <span class="s">'false'</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">defined</span>
+</code></pre></div></div>
+
+<h2 id="문자열심화">문자열(심화)</h2>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">message</span> <span class="o">=</span> <span class="s">"Hello World!"</span>
+<span class="k">print</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
+<span class="n">Hello</span> <span class="n">World</span><span class="err">!</span>
+
+<span class="n">message</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="s">'H'</span>
+
+<span class="n">message</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="s">'e'</span>
+
+<span class="c1"># 맨 마지막 인덱스에 있는 문자를 가져온다.
+</span><span class="n">message</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="s">'!'</span>
+
+<span class="c1"># 문자열 길이 구하기
+</span><span class="nb">len</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
+<span class="mi">12</span>
+</code></pre></div></div>
+
+<h2 id="문자열-슬라이싱">문자열 슬라이싱</h2>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># [:]은 전체 문자열을 가져옵니다.
+</span><span class="n">message</span><span class="p">[:]</span>
+<span class="s">'Hello World!'</span>
+
+<span class="c1"># [시작인덱스:끝인덱스+1]
+</span><span class="n">message</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
+<span class="s">'Hel'</span>
+
+<span class="c1"># 첫 인덱스부터 4개
+</span><span class="n">message</span><span class="p">[:</span><span class="mi">4</span><span class="p">]</span>
+<span class="s">'Hell'</span>
+
+<span class="c1"># 4번 인덱스부터 끝 인덱스까지
+</span><span class="n">message</span><span class="p">[</span><span class="mi">4</span><span class="p">:]</span>
+<span class="s">'o World!'</span>
+
+<span class="c1"># 뒤에서 3개
+</span><span class="n">message</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">:]</span>
+<span class="s">'ld!'</span>
+
+<span class="c1"># 뒤에서 3개 제외한 나머지
+</span><span class="n">message</span><span class="p">[:</span><span class="o">-</span><span class="mi">3</span><span class="p">]</span>
+<span class="s">'Hello Wor'</span>
+
+<span class="s">"H"</span> <span class="ow">in</span> <span class="n">message</span>
+<span class="bp">True</span>
+
+<span class="n">message</span><span class="p">.</span><span class="n">lower</span><span class="p">()</span>
+<span class="s">'hello world!'</span>
+</code></pre></div></div>
+
+<h2 id="리스트">리스트</h2>
+<ul>
+  <li>여러 데이터를 담는 자료형</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">odd</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
+<span class="n">odd</span>
+<span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
+
+<span class="n">odd</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="mi">1</span>
+</code></pre></div></div>
+
+<h3 id="리스트-슬라이싱">리스트 슬라이싱</h3>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># 리스트 안의 모든 값을 가져옵니다.
+</span><span class="n">odd</span><span class="p">[:]</span>
+<span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
+
+<span class="n">odd</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">4</span><span class="p">]</span>
+<span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">]</span>
+
+<span class="c1"># 앞의 숫자를 생략하면 시작 인덱스부터 가져옵니다.
+</span><span class="n">odd</span><span class="p">[:</span><span class="mi">4</span><span class="p">]</span>
+<span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">]</span>
+
+<span class="c1"># 3번 인덱스부터 끝 인덱스까지 가져옵니다.
+</span><span class="n">odd</span><span class="p">[</span><span class="mi">3</span><span class="p">:]</span>
+<span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
+
+<span class="c1"># 뒤에서 2개만 가져옵니다.
+</span><span class="n">odd</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">:]</span>
+<span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
+
+<span class="mi">1</span> <span class="ow">in</span> <span class="n">odd</span>
+<span class="bp">True</span>
+
+<span class="mi">2</span> <span class="ow">in</span> <span class="n">odd</span>
+<span class="bp">False</span>
+</code></pre></div></div>
+
+<h3 id="리스트-메소드">리스트 메소드</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">odd</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mi">11</span><span class="p">)</span>
+<span class="n">odd</span>
+<span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">11</span><span class="p">]</span>
+
+<span class="n">odd</span><span class="p">.</span><span class="n">reverse</span><span class="p">()</span>
+<span class="n">odd</span>
+<span class="p">[</span><span class="mi">11</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+</code></pre></div></div>
+
+<h2 id="제어문">제어문</h2>
+<ul>
+  <li>들여쓰기(indent)를 사용하여 표현</li>
+  <li>조건문과 반복문 뒤에는 콜론(:)이 들어가고 콜론 바로 아랫줄에는 indent된 문장이 필요</li>
+</ul>
+
+<h3 id="조건문if">조건문(if)</h3>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">age</span> <span class="o">=</span> <span class="mi">13</span>
+<span class="k">if</span> <span class="n">age</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"아이"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">age</span> <span class="o">&lt;</span> <span class="mi">18</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"학생"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"어른"</span><span class="p">)</span>
+
+<span class="n">학생</span>
+
+<span class="n">score</span> <span class="o">=</span> <span class="mi">50</span>
+<span class="k">if</span> <span class="n">score</span> <span class="o">&gt;=</span> <span class="mi">60</span><span class="p">:</span>
+    <span class="n">message</span> <span class="o">=</span> <span class="s">"success"</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">message</span> <span class="o">=</span> <span class="s">"failure"</span>
+    
+<span class="n">failure</span>
+
+<span class="c1"># 한줄로도 표현 가능
+</span><span class="n">message1</span> <span class="o">=</span> <span class="s">"success"</span> <span class="k">if</span> <span class="n">score</span> <span class="o">&gt;=</span> <span class="mi">60</span> <span class="k">else</span> <span class="s">"failure"</span>
+<span class="k">print</span><span class="p">(</span><span class="n">message1</span><span class="p">)</span>
+<span class="n">failure</span>
+</code></pre></div></div>
+
+<h3 id="반복문for">반복문(for)</h3>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">basket</span> <span class="o">=</span> <span class="p">[</span><span class="s">"apple"</span><span class="p">,</span> <span class="s">"banana"</span><span class="p">,</span> <span class="s">"chicken"</span><span class="p">,</span> <span class="s">"cherry"</span><span class="p">,</span> <span class="s">"pineapple"</span><span class="p">]</span>
+<span class="n">basket</span>
+
+<span class="p">[</span><span class="s">'apple'</span><span class="p">,</span> <span class="s">'banana'</span><span class="p">,</span> <span class="s">'chicken'</span><span class="p">,</span> <span class="s">'cherry'</span><span class="p">,</span> <span class="s">'pineapple'</span><span class="p">]</span>
+
+<span class="c1"># 다음 동작을 단순하게 표현 가능
+</span><span class="k">print</span><span class="p">(</span><span class="n">basket</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="k">print</span><span class="p">(</span><span class="n">basket</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="k">print</span><span class="p">(</span><span class="n">basket</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+<span class="k">print</span><span class="p">(</span><span class="n">basket</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
+<span class="k">print</span><span class="p">(</span><span class="n">basket</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span>
+
+<span class="k">for</span> <span class="n">product</span> <span class="ow">in</span> <span class="n">basket</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">product</span><span class="p">)</span>
+
+<span class="n">apple</span>
+<span class="n">banana</span>
+<span class="n">chicken</span>
+<span class="n">cherry</span>
+<span class="n">pineapple</span>
+
+<span class="c1"># 한줄로 표현 가능
+</span><span class="k">for</span> <span class="n">product</span> <span class="ow">in</span> <span class="n">basket</span><span class="p">:</span> <span class="k">print</span><span class="p">(</span><span class="n">product</span><span class="p">)</span>
+
+<span class="n">apple</span>
+<span class="n">banana</span>
+<span class="n">chicken</span>
+<span class="n">cherry</span>
+<span class="n">pineapple</span>
+
+<span class="c1"># range(n) : 0 ~ n-1
+</span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+
+<span class="mi">0</span>
+<span class="mi">1</span>
+<span class="mi">2</span>
+
+<span class="c1"># indent에 따른 구문 실행 결과
+</span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">5</span><span class="p">:</span>
+        <span class="c1"># if문 안에서 실행됩니다.
+</span>        <span class="k">print</span><span class="p">(</span><span class="s">"bang!"</span><span class="p">)</span>
+    <span class="c1"># for 문 안에서 실행 됩니다.
+</span>    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+    
+<span class="c1"># for문 밖에서 실행됩니다.
+</span><span class="k">print</span><span class="p">(</span><span class="s">"complete"</span><span class="p">)</span>
+
+<span class="mi">0</span>
+<span class="mi">1</span>
+<span class="mi">2</span>
+<span class="mi">3</span>
+<span class="mi">4</span>
+<span class="n">bang</span><span class="err">!</span>
+<span class="mi">5</span>
+<span class="mi">6</span>
+<span class="mi">7</span>
+<span class="mi">8</span>
+<span class="mi">9</span>
+<span class="n">complete</span>
+</code></pre></div></div>
+
+<h2 id="함수">함수</h2>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># def == define의 약자
+</span><span class="k">def</span> <span class="nf">multifly</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span>
+    <span class="k">return</span> <span class="n">c</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">multifly</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="mi">6</span>
+</code></pre></div></div>
+
+<h2 id="type">Type</h2>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">my_int</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">type</span><span class="p">(</span><span class="n">my_int</span><span class="p">)</span>
+<span class="o">&lt;</span><span class="k">class</span> <span class="err">'</span><span class="nc">int</span><span class="s">'&gt;
+&gt;&gt;&gt; float(my_int)
+1.0
+&gt;&gt;&gt; my_float = float(my_int)
+&gt;&gt;&gt; type(my_float)
+&lt;class '</span><span class="nb">float</span><span class="s">'&gt;
+&gt;&gt;&gt; my_str = '</span><span class="n">coding</span><span class="s">'
+&gt;&gt;&gt; list(my_str)
+['</span><span class="n">c</span><span class="s">', '</span><span class="n">o</span><span class="s">', '</span><span class="n">d</span><span class="s">', '</span><span class="n">i</span><span class="s">', '</span><span class="n">n</span><span class="s">', '</span><span class="n">g</span><span class="s">']
+</span></code></pre></div></div>
+
+<h2 id="formatting">Formatting</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="s">'My age is %d'</span> <span class="o">%</span> <span class="mi">33</span>
+<span class="s">'My age is 33'</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="s">'My Name is %s'</span> <span class="o">%</span> <span class="s">'hanseung'</span>
+<span class="s">'My Name is hanseung'</span>
+</code></pre></div></div>
+
+<h2 id="주석">주석</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># 주석은 # 로 표시
+</span></code></pre></div></div>
+:ET

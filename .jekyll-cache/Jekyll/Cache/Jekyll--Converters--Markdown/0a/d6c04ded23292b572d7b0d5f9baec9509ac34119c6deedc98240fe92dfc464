@@ -1,0 +1,525 @@
+I"*0<h3 id="well-known-port">Well Known Port?</h3>
+
+<p>Well Known Port 는 특정 목적으로 IANA에서 할당한 TCP/UDP 포트이다. 일반적으로 포트 번호는 다음 세 가지로 나눌 수  있다.</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">0 ~ 1023</code> Well Known Port</li>
+  <li><code class="language-plaintext highlighter-rouge">1024 ~ 49151</code> Registered Port</li>
+  <li><code class="language-plaintext highlighter-rouge">49152 ~ 65535</code> Dynamic Port</li>
+</ul>
+
+<h3 id="well-known-port-list">Well Known Port List</h3>
+
+<p>이 번호들은 IANA의 권고안 강제로 지정된 것은 아니다. 가끔 포트 번호를 그대로 사용하지 않고 다른 용도로 사용하기도 한다. 트로이 목마와 같은 프로그램들이 악의적인 목적으로 포트를 변경하여 사용하는 경우가 존재한다.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>포트</th>
+      <th>TCP</th>
+      <th>UDP</th>
+      <th>설명</th>
+      <th>상태</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td> </td>
+      <td>UDP</td>
+      <td>예약됨; 사용하지 않음</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>TCP</td>
+      <td> </td>
+      <td>TCPMUX (TCP 포트 서비스 멀티플렉서)</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>TCP</td>
+      <td>UDP</td>
+      <td>ECHO 프로토콜</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>TCP</td>
+      <td>UDP</td>
+      <td>DISCARD 프로토콜</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>TCP</td>
+      <td>UDP</td>
+      <td>DAYTIME 프로토콜</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>TCP</td>
+      <td> </td>
+      <td>QOTD (Quote of the Day) 프로토콜</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>TCP</td>
+      <td>UDP</td>
+      <td>CHARGEN (Character Generator) 프로토콜 - 원격 오류 수정</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>TCP</td>
+      <td> </td>
+      <td>FTP (파일 전송 프로토콜) - 데이터 포트</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>TCP</td>
+      <td> </td>
+      <td>FTP - 제어 포트</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>TCP</td>
+      <td> </td>
+      <td>SSH (Secure Shell) - ssh scp, sftp같은 프로토콜 및 포트 포워딩</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>TCP</td>
+      <td> </td>
+      <td>텔넷 프로토콜 - 암호화되지 않은 텍스트 통신</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>TCP</td>
+      <td> </td>
+      <td>개인메일 시스템</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>TCP</td>
+      <td> </td>
+      <td>SMTP (Simple Mail Transfer Protocol) - 이메일 전송에 사용</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>TCP</td>
+      <td>UDP</td>
+      <td>TIME 프로토콜</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>49</td>
+      <td> </td>
+      <td>UDP</td>
+      <td>TACACS 프로토콜</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>53</td>
+      <td>TCP</td>
+      <td>UDP</td>
+      <td>DNS (Domain Name System)</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>67</td>
+      <td> </td>
+      <td>UDP</td>
+      <td>BOOTP (부트스트랩 프로토콜) 서버. DHCP로도 사용</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>68</td>
+      <td> </td>
+      <td>UDP</td>
+      <td>BOOTP (부트스트랩 프로토콜) 클라이언트. DHCP로도 사용</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>69</td>
+      <td> </td>
+      <td>UDP</td>
+      <td>TFTP</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>70</td>
+      <td>TCP</td>
+      <td> </td>
+      <td>고퍼 프로토콜</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>79</td>
+      <td>TCP</td>
+      <td> </td>
+      <td>Finger 프로토콜</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>80</td>
+      <td>TCP</td>
+      <td>UDP</td>
+      <td>HTTP (HyperText Transfer Protocol) - 웹 페이지 전송</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>88</td>
+      <td>TCP</td>
+      <td> </td>
+      <td>커베로스 - 인증 에이전트</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>109</td>
+      <td>TCP</td>
+      <td> </td>
+      <td>POP2 (Post Office Protocol version 2) - 전자우편 가져오기에 사용</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>110</td>
+      <td>TCP</td>
+      <td> </td>
+      <td>POP3 (Post Office Protocol version 3) - 전자우편 가져오기에 사용</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>111</td>
+      <td>TCP</td>
+      <td>UDP</td>
+      <td>RPC (Remote Procedure Call)</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>113</td>
+      <td>TCP</td>
+      <td> </td>
+      <td>ident - 예전 서버 인증 시스템, 현재는 IRC 서버에서 사용자 인증에 사용</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>119</td>
+      <td>TCP</td>
+      <td> </td>
+      <td>NNTP (Network News Transfer Protocol) - 뉴스 그룹 메시지 가져오기에 사용</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>123</td>
+      <td> </td>
+      <td>UDP</td>
+      <td>NTP (Network Time Protocol) - 시간 동기화</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>139</td>
+      <td>TCP</td>
+      <td> </td>
+      <td>넷바이오스</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>143</td>
+      <td>TCP</td>
+      <td> </td>
+      <td>IMAP4 (인터넷 메시지 접근 프로토콜 4) - 이메일 가져오기에 사용</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>161</td>
+      <td> </td>
+      <td>UDP</td>
+      <td>SNMP (Simple Network Management Protocol) - Agent 포트</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>162</td>
+      <td> </td>
+      <td>UDP</td>
+      <td>SNMP - Manager 포트</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>179</td>
+      <td>TCP</td>
+      <td> </td>
+      <td>BGP (Border Gateway Protocol)</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>194</td>
+      <td>TCP</td>
+      <td> </td>
+      <td>IRC (Internet Relay Chat)</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>389</td>
+      <td>TCP</td>
+      <td> </td>
+      <td>LDAP (Lightweight Directory Access Protocol)</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>443</td>
+      <td>TCP</td>
+      <td> </td>
+      <td>HTTPS - SSL 위의 HTTP (암호화 전송)</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>445</td>
+      <td>TCP</td>
+      <td> </td>
+      <td>Microsoft-DS (액티브 디렉터리, 윈도 공유, Sasser-worm, Agobot, Zobotworm)</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>445</td>
+      <td> </td>
+      <td>UDP</td>
+      <td>Microsoft-DS SMB 파일 공유</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>465</td>
+      <td>TCP</td>
+      <td> </td>
+      <td>SSL 위의 SMTP - Cisco 프로토콜과 충돌</td>
+      <td>비공식, 충돌</td>
+    </tr>
+    <tr>
+      <td>514</td>
+      <td> </td>
+      <td>UDP</td>
+      <td>syslog 프로토콜 - 시스템 로그 작성</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>515</td>
+      <td>TCP</td>
+      <td> </td>
+      <td>LPD 프로토콜 - 라인 프린터 데몬 서비스</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>540</td>
+      <td>TCP</td>
+      <td> </td>
+      <td>UUCP (Unix-to-Unix Copy Protocol)</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>542</td>
+      <td>TCP</td>
+      <td>UDP</td>
+      <td>상용 (Commerce Applications) (RFC maintained by: Randy Epstein [repstein at host.net])</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>587</td>
+      <td>TCP</td>
+      <td> </td>
+      <td>email message submission (SMTP) (RFC 2476)</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>591</td>
+      <td>TCP</td>
+      <td> </td>
+      <td>파일메이커 6.0 Web Sharing (HTTP Alternate, see port 80)</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>631</td>
+      <td>TCP</td>
+      <td> </td>
+      <td>인터넷 프린팅 프로토콜</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>636</td>
+      <td>TCP</td>
+      <td> </td>
+      <td>SSL 위의 LDAP (암호화된 전송)</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>666</td>
+      <td>TCP</td>
+      <td> </td>
+      <td>id 소프트웨어의 둠 멀티플레이어 게임</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>873</td>
+      <td>TCP</td>
+      <td> </td>
+      <td>rsync 파일 동기화 프로토콜</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>981</td>
+      <td>TCP</td>
+      <td> </td>
+      <td>SofaWare Technologies Checkpoint Firewall-1 소프트웨어 내장 방화벽의 원격 HTTPS 관리</td>
+      <td>비공식</td>
+    </tr>
+    <tr>
+      <td>990</td>
+      <td>TCP</td>
+      <td> </td>
+      <td>SSL 위의 FTP (암호화 전송)</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>992</td>
+      <td>TCP</td>
+      <td> </td>
+      <td>SSL 위의 Telnet (암호화 전송)</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>993</td>
+      <td>TCP</td>
+      <td> </td>
+      <td>SSL 위의 IMAP4 (암호화 전송)</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>995</td>
+      <td>TCP</td>
+      <td> </td>
+      <td>SSL 위의 POP3 (암호화 전송)</td>
+      <td>공식</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="registered-port">Registered Port</h3>
+
+<p>포트 번호 1024번에서 49151번((210 ~ 214 + 215 − 1)은 등록된 포트 구간이다. 이 포트들은 RFC6335에 따라 인터넷 할당 번호 관리 기관에 등록한다. 통상 이 구간의 포트들은 시스템에서 슈퍼유저 권한이 없어도 사용 가능하다.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>포트</th>
+      <th>TCP</th>
+      <th>UDP</th>
+      <th>설명</th>
+      <th>상태</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1080</td>
+      <td>TCP</td>
+      <td>UDP</td>
+      <td>SOCKS 프록시</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>1194</td>
+      <td>TCP</td>
+      <td>UDP</td>
+      <td>OpenVPN</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>1900</td>
+      <td>TCP</td>
+      <td>UDP</td>
+      <td>Simple Service Discovery Protocol (SSDP), UPnP 장치 검출 서비스</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>3306</td>
+      <td>TCP</td>
+      <td> </td>
+      <td>MySQL</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>3479</td>
+      <td>TCP</td>
+      <td>UDP</td>
+      <td>플레이스테이션_네트워크</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>3480</td>
+      <td>TCP</td>
+      <td>UDP</td>
+      <td>플레이스테이션_네트워크</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>3690</td>
+      <td>TCP</td>
+      <td>UDP</td>
+      <td>Subversion</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>5228</td>
+      <td>TCP</td>
+      <td>UDP</td>
+      <td>HP Virtual Room Service</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>5228</td>
+      <td>TCP</td>
+      <td>UDP</td>
+      <td>구글 안드로이드 메시징 프로토콜</td>
+      <td>비공식</td>
+    </tr>
+    <tr>
+      <td>5353</td>
+      <td> </td>
+      <td>UDP</td>
+      <td>Multicast DNS</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>6379</td>
+      <td>TCP</td>
+      <td> </td>
+      <td>Redis 서비스</td>
+      <td>공식</td>
+    </tr>
+    <tr>
+      <td>9100</td>
+      <td>TCP</td>
+      <td> </td>
+      <td>네트워크 프린팅 프로토콜</td>
+      <td>비공식</td>
+    </tr>
+    <tr>
+      <td>17500</td>
+      <td>TCP</td>
+      <td>UDP</td>
+      <td>Dropbox LanSync 프로토콜, LAN 상에서 Dropbox 클라이언트끼리 파일목록을 동기화 함</td>
+      <td>공식</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="references">References</h3>
+<p><a href="https://ko.wikipedia.org/wiki/TCP/UDP%EC%9D%98_%ED%8F%AC%ED%8A%B8_%EB%AA%A9%EB%A1%9D">TCP/UDP의 포트 목록 - Wikipedia</a></p>
+:ET

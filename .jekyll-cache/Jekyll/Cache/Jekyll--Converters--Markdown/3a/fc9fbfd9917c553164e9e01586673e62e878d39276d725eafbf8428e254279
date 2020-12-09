@@ -1,0 +1,86 @@
+I"�<h1 id="h1">H1</h1>
+<h2 id="h2">H2</h2>
+<h3 id="h3">H3</h3>
+<h4 id="h4">H4</h4>
+<h5 id="h5">H5</h5>
+<h6 id="h6">H6</h6>
+<h5 id="h5-1">H5</h5>
+<h4 id="h4-1">H4</h4>
+<h3 id="h3-1">H3</h3>
+<h2 id="h2-1">H2</h2>
+<h1 id="h1-1">H1</h1>
+
+<p>Thread.sleep() 하는 부분에서 li 변수에 새로운 ArrayList 를 생성하도록 해보자. 그리고 몇번째 루프에서 가비지 컬렉션이 수행되는지 확인하기 위해 프린트도 하나 찍어보자. 무한루프를 돌면서 중간중간에 List 를 가비지가 되도록 만들어서 가비지 컬렉션이 수행되면 프로그램은 죽지않고 계속해서 돌아갈 것이다. 코드는 아래와 같다.</p>
+
+<hr />
+<p><strong>굵은 체</strong><br />
+<em>기울임</em><br />
+<u>밑줄</u><br />
+<del>취소선</del></p>
+
+<p><a href="www.naver.com">감기는</a></p>
+
+<ul>
+  <li>목록1</li>
+  <li>목록2</li>
+  <li>목록3
+    <ul>
+      <li>목록3-1</li>
+      <li>목록3-2
+        <ul>
+          <li>목록3-2-1</li>
+          <li>목록3-2-1
+            <ul>
+              <li>목록3-2-1
+                <ul>
+                  <li>목록3-2-1
+                    <ul>
+                      <li>목록3-2-1</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<ol>
+  <li>숫자목록1
+    <ol>
+      <li>123
+        <ol>
+          <li>123123
+            <ol>
+              <li>123124
+                <ol>
+                  <li>134131</li>
+                </ol>
+              </li>
+            </ol>
+          </li>
+        </ol>
+      </li>
+    </ol>
+  </li>
+  <li>숫자목록2</li>
+  <li>숫자목록3</li>
+</ol>
+
+<blockquote>
+  <p>Garbage collection was invented by John McCarthy around 1959 to simplify manual memory management in Lisp.</p>
+</blockquote>
+
+<blockquote>
+  <p>인용2<br />
+인용2</p>
+</blockquote>
+
+<p>중간에 강조하는 <code class="language-plaintext highlighter-rouge">코드</code>를 삽입할 수 있다</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>코드 블록
+</code></pre></div></div>
+:ET

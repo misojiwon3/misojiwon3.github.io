@@ -1,0 +1,64 @@
+I"�<h3 id="기본-사항">기본 사항</h3>
+
+<ul>
+  <li>일반적인 Text Formatting에 사용할 수 있는 필터를 정의할 수 있다</li>
+  <li>mustache interpolation과 v-bind 에서 사용 가능하다</li>
+  <li>적용할 변수의 key 뒤에 pipe symbol 과 함께 사용한다</li>
+</ul>
+
+<p>{% raw %}</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;</span><span class="err">!—</span> <span class="na">in</span> <span class="na">mustaches</span> <span class="err">—</span><span class="nt">&gt;</span>
+{{ message | capitalize }}
+
+<span class="nt">&lt;</span><span class="err">!—</span> <span class="na">in</span> <span class="na">v-bind</span> <span class="err">—</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">v-bind:id=</span><span class="s">“rawId</span> <span class="err">|</span> <span class="na">formatId</span><span class="err">”</span><span class="nt">&gt;&lt;/div&gt;</span>
+</code></pre></div></div>
+<p>{% endraw %}</p>
+
+<h3 id="declaration">Declaration</h3>
+
+<ul>
+  <li>컴포넌트의 로컬 필터로 정의</li>
+</ul>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">filters</span><span class="p">:</span> <span class="p">{</span>
+  <span class="nl">capitalize</span><span class="p">:</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">value</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">value</span><span class="p">)</span> <span class="k">return</span> <span class="dl">''</span>
+    <span class="nx">value</span> <span class="o">=</span> <span class="nx">value</span><span class="p">.</span><span class="nx">toString</span><span class="p">()</span>
+    <span class="k">return</span> <span class="nx">value</span><span class="p">.</span><span class="nx">charAt</span><span class="p">(</span><span class="mi">0</span><span class="p">).</span><span class="nx">toUpperCase</span><span class="p">()</span> <span class="o">+</span> <span class="nx">value</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<ul>
+  <li>Vue instance가 생성되기 전에 전역적으로 정의</li>
+</ul>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">Vue</span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="dl">'</span><span class="s1">capitalize</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">value</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">value</span><span class="p">)</span> <span class="k">return</span> <span class="dl">''</span>
+  <span class="nx">value</span> <span class="o">=</span> <span class="nx">value</span><span class="p">.</span><span class="nx">toString</span><span class="p">()</span>
+  <span class="k">return</span> <span class="nx">value</span><span class="p">.</span><span class="nx">charAt</span><span class="p">(</span><span class="mi">0</span><span class="p">).</span><span class="nx">toUpperCase</span><span class="p">()</span> <span class="o">+</span> <span class="nx">value</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="p">})</span>
+
+<span class="k">new</span> <span class="nx">Vue</span><span class="p">({</span>
+  <span class="c1">// ...</span>
+<span class="p">})</span>
+</code></pre></div></div>
+
+<h3 id="usage">Usage</h3>
+
+<ul>
+  <li>필터는 체인으로 사용 가능
+{% raw %}
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{{ message | filterA | filterB }}
+</code></pre></div>    </div>
+    <p>{% endraw %}</p>
+  </li>
+  <li>필터가 parameter를 입력받는 javascript 함수로 정의된 경우 다음과 같이 사용
+{% raw %}
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{{ message | filterA(‘arg1’, arg2) }}
+</code></pre></div>    </div>
+    <p>{% endraw %}</p>
+  </li>
+</ul>
+:ET

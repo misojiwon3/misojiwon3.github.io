@@ -1,0 +1,53 @@
+I"�<h3 id="rootless">Rootless?</h3>
+<ul>
+  <li>macOS System Integrity Protection (SIP)</li>
+  <li>OS X 10.11 El Capitan 부터 도입된 새로운 보안기능</li>
+  <li>사용자나 응용 프로그램이 시스템 영역의 파일을 삭제하거나 변조할 수 없도록 ‘커널 레벨’에서 파일을 잠그는 기능</li>
+  <li>사용자가 관리자 권한을 가지고 있더라도 시스템 파일을 마음대로 건드릴 수 없도록 차단</li>
+</ul>
+
+<p><img src="/images/etc/mac_rootless/platform_policy.jpg" alt="rootless_platform_policy" /></p>
+<figcaption>Rootless가 보호하는 영역</figcaption>
+
+<h3 id="rootless의-장단점">Rootless의 장단점</h3>
+<p>Rootless가 enable 일 때 위 디렉토리 영역에 ls, mv, cp 등의 작업을 시도한다면, root 권한을 가지고 있더라도 <code class="language-plaintext highlighter-rouge">Operation not permitted</code>라는 경고문을 띄우며 작업을 거부합니다. 이는 원치 않는 작업을 외부 요인들로부터 차단함으로써 사용자가 본인의 PC 환경을 안전한 상태로 유지시킬 수 있도록 합니다.<br />
+하지만 macOS의 장점인 Customizing 에 여러 제약이 발생할 수 있으며 System Level에 접근하는 응용프로그램들(Bluestack, Parallels 등)의 기능마저도 제한될 수 있다는 단점도 있습니다.</p>
+
+<h3 id="rootless-비활성화활성화-방법">Rootless 비활성화/활성화 방법</h3>
+<ol>
+  <li>맥 종료 후 재시작</li>
+  <li>재시작 되는 과정에서 ⌘+R 버튼을 눌러 복구모드로 진입</li>
+  <li>복구 모드의 메뉴막대에서 <code class="language-plaintext highlighter-rouge">유틸리티 &gt; 터미널</code> 실행
+<img src="/images/etc/mac_rootless/macos.jpg" alt="rootless" /></li>
+  <li>터미널에 다음을 입력하여 SIP 기능을 비활성화 시킨 후 reboot
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>csrutil disable
+<span class="nv">$ </span>reboot
+</code></pre></div>    </div>
+  </li>
+  <li>다시 SIP 기능을 활성화 하려면 다음을 입력
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>csrutil <span class="nb">enable</span>
+</code></pre></div>    </div>
+  </li>
+  <li>상태 확인
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>csrutil status
+System Integrity Protection status: disabled.
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h3 id="rootless-비활성화-상태에서-제어">Rootless 비활성화 상태에서 제어</h3>
+<p>비활성화 방식과는 달리 Rootless가 비활성 상태라면 정상 부팅 환경에서 활성화 가능</p>
+
+<ol>
+  <li>터미널 실행 후 다음 입력
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo</span> /usr/bin/csrutil clear
+Successfully cleared System Integrity Protection. Please restart the machine <span class="k">for </span>the changes to take effect.
+</code></pre></div>    </div>
+  </li>
+  <li>입력 후 재시동 하면 SIP 기능 활성화
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>csrutil status
+System Integrity Protection status: enabled.
+</code></pre></div>    </div>
+  </li>
+</ol>
+:ET

@@ -1,0 +1,33 @@
+I"c<h3 id="계정-목록-보기">계정 목록 보기</h3>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cat</span> /etc/passwd
+
+nobody:<span class="k">*</span>:-2:-2:Unprivileged User:/var/empty:/usr/bin/false
+root:<span class="k">*</span>:0:0:System Administrator:/var/root:/bin/sh
+<span class="o">(</span>생략<span class="o">)</span>
+</code></pre></div></div>
+
+<h3 id="계정-생성">계정 생성</h3>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Ubuntu, SUSE, Arch</span>
+useradd <span class="o">[</span>계정명] <span class="nt">-m</span> <span class="nt">-s</span> /bin/bash
+
+<span class="c"># CentOS</span>
+useradd <span class="o">[</span>계정명]
+</code></pre></div></div>
+
+<h3 id="그룹-지정하여-계정-생성">그룹 지정하여 계정 생성</h3>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># 그룹명이 없으면 그룹 생성 후 계정 생성</span>
+useradd <span class="o">[</span>계정명] <span class="nt">-G</span> 그룹명
+
+<span class="c"># 기존 그룹에 계정 생성</span>
+useradd <span class="o">[</span>계정명] <span class="nt">-g</span> 그룹명
+</code></pre></div></div>
+
+<h3 id="uid-지정하여-생성">UID 지정하여 생성</h3>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>useradd <span class="o">[</span>계정명] <span class="nt">-u</span> <span class="o">[</span>사용자아이디]
+</code></pre></div></div>
+
+:ET
