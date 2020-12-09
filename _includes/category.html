@@ -2,7 +2,7 @@
 
 <div class="category">
     {% if page.type == 'category' %}
-    <div class="category-header loading-animation">
+    <div class="category-header loading-animation" {% if page.header-image %} style="background-image: url('{{ page.header-image }}')"{% endif %}>
         <div class="category-header-title">
             {{ page.title }}
         </div>

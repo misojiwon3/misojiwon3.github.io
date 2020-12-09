@@ -42,4 +42,4 @@ github_username:   misojiwon3
 # Excludes
 exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]
 
-menubar: [ Home, Development, Book, Blog, Etc ]
+menubar: [ Home, Development, Etc ]

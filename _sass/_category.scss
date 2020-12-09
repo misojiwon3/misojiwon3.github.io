@@ -21,20 +21,22 @@
       margin: 24px auto;
     }
 
-    &.blog {
+    &.development {
+      background-position: left;
+      background-color: $deep-blue;
+    }
+
+    &.etc {
+      background-size: cover;
       background-color: $turtle-green;
+    }
+
+    &.blog {
+      background-color: $grey-20;
     }
 
     &.book {
       background-color: $royal-blue;
-    }
-
-    &.development {
-      background-color: $grey-20;
-    }
-
-    &.etc {
-      background-color: $deep-blue;
     }
 
     &-title {
@@ -53,7 +55,7 @@
       margin: 0 auto;
       padding-top: 6px;
       font-size: 20px;
-      color: $grey-1;
+      color: $grey-white;
       @media (max-width: $break-small) {
         font-size: 17px;
       }
